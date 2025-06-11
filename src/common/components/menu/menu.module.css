@@ -1,0 +1,11 @@
+.navWrapper {
+  width: 62%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link {
+  color: var(--light-100);
+  margin: 10px;
+}

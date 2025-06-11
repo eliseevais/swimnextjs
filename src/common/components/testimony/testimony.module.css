@@ -1,0 +1,77 @@
+.testimonyWrapper {
+  width: 100%;
+  min-height: 660px;
+  background-color: var(--dark-500);
+  position: relative;
+  padding: 0 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imageAndDescription {
+  width: 894px;
+  height: 394px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.description {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 130px;
+  left: 520px;
+  z-index: 5; /* 👈 чтобы быть поверх */
+  color: var(--primary-700);
+  display: flex;
+  gap: 8px;
+}
+
+.controls button {
+  margin: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--primary-700);
+  background: transparent;
+  border: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.2);
+  color: var(--light-100);
+}
+
+.keen-slider__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facts {
+  max-width: 250px;
+  font-size: 30px;
+}
+
+.fact {
+  margin-bottom: 20px;
+}
+
+.number {
+  color: var(--primary-700);
+  font-weight: bold;
+  font-size: 50px;
+}

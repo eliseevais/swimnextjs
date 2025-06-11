@@ -1,0 +1,5 @@
+.contactWrapper {
+  width: 100%;
+  min-height: 660px;
+  background: var(--dark-900);
+}

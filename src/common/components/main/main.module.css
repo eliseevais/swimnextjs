@@ -1,0 +1,62 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 744px;
+  position: relative;
+}
+
+.leftSide {
+  width: 50%;
+  background-color: var(--dark-500);
+  height: 100%;
+}
+
+.rightSide {
+  width: 50%;
+  height: 100%;
+  background-image: url('/assets/swimmer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.greetings {
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
+}
+
+.greetings h1 {
+  font-size: 90px;
+}
+
+.greetings span {
+  display: inline-block;
+  max-width: 440px;
+  font-size: 20px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.callme {
+  margin-top: 30px;
+  min-width: 200px;
+  height: 64px;
+  background-color: var(--primary-700);
+  color: var(--light-100);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Расстояние между иконкой и текстом */
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.icon {
+  font-size: 20px;
+}

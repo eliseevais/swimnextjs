@@ -1,0 +1,31 @@
+.worksWrapper {
+  width: 100%;
+  min-height: 660px;
+  background-color: var(--dark-700);
+  padding: 0 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.years {
+  font-size: 100px;
+  color: var(--primary-700);
+  font-weight: bold;
+}
+
+.myExpirience {
+  max-width: 300px;
+  color: var(--light-100);
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.typesOfServices {
+  min-width: 900px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: var(--light-100);
+}

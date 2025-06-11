@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  z-index: 2;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  max-width: 280px;
+  flex-wrap: wrap;
+}
