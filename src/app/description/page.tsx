@@ -2,12 +2,12 @@
 
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import s from "./testimony.module.css";
-import { BabySwimPlus } from "@/common/components/testimony/babySwimPlus/babySwimPlus";
-import { AdultSwimPlus } from "@/common/components/testimony/adultSwimPlus/adultSwimPlus";
-import { PrepareForCompetitionsPlus } from "@/common/components/testimony/prepareForCompetitionsPlus/prepareForCompetitionsPlus";
+import s from "./description.module.css";
+import { BabySwimPlus } from "@/app/description/babySwimPlus/babySwimPlus";
+import { AdultSwimPlus } from "@/app/description/adultSwimPlus/adultSwimPlus";
+import { PrepareForCompetitionsPlus } from "@/app/description/prepareForCompetitionsPlus/prepareForCompetitionsPlus";
 
-export const Testimony = () => {
+export default function Description() {
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     slides: {
@@ -53,4 +53,4 @@ export const Testimony = () => {
       </div>
     </div>
   );
-};
+}

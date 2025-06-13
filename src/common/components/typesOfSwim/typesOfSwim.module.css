@@ -1,0 +1,36 @@
+.typesOfSwimWrapper {
+  width: 100%;
+  min-height: 160px;
+  background: var(--dark-800);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marqueeContent {
+  display: flex;
+  gap: 80px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  color: var(--light-100);
+  white-space: nowrap;
+  animation: scrollMarquee 45s linear infinite;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

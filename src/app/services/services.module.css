@@ -1,17 +1,17 @@
 .worksWrapper {
   width: 100%;
   min-height: 660px;
-  background-color: var(--dark-700);
   padding: 0 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
+  background-color: var(--dark-600);
 }
 
 .years {
   font-size: 100px;
-  color: var(--primary-700);
+  color: var(--primary-500);
   font-weight: bold;
 }
 

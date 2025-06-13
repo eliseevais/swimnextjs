@@ -1,24 +1,25 @@
 .mainWrapper {
+  position: relative;
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 744px;
-  position: relative;
 }
 
 .leftSide {
   width: 50%;
-  background-color: var(--dark-500);
   height: 100%;
+  background-color: var(--dark-600);
 }
 
 .rightSide {
+  position: relative;
   width: 50%;
   height: 100%;
   background-image: url('/assets/swimmer.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .greetings {
@@ -30,11 +31,14 @@
 
 .greetings h1 {
   font-size: 90px;
+  max-width: 880px;
+  margin-bottom: 24px;
 }
 
 .greetings span {
   display: inline-block;
   max-width: 440px;
+  margin-bottom: 24px;
   font-size: 20px;
   line-height: 1.5;
   word-wrap: break-word;
@@ -42,21 +46,34 @@
 }
 
 .callme {
-  margin-top: 30px;
-  min-width: 200px;
-  height: 64px;
-  background-color: var(--primary-700);
-  color: var(--light-100);
-  border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* Расстояние между иконкой и текстом */
-  font-size: 18px;
-  cursor: pointer;
+  gap: 8px;
+  min-width: 200px;
+  min-height: 64px;
   padding: 0 8px;
+  margin-top: 30px;
+  background-color: var(--primary-500);
+  color: var(--light-100);
+  font-size: 18px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
 }
 
+.callme:hover {
+  background-color: var(--primary-600);
+  transform: translateY(-4px);
+  transition: background-color 0.3s ease;
+}
+
+
 .icon {
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.buttonText {
   font-size: 20px;
 }

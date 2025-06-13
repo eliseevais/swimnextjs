@@ -1,5 +1,5 @@
-import s from "../testimony.module.css";
 import Image from "next/image";
+import s from "../description.module.css";
 
 export const PrepareForCompetitionsPlus = () => {
   return (

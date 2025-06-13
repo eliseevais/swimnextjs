@@ -1,19 +1,11 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { Geist_Mono } from "next/font/google"; // добавили импорт
 import "./globals.css";
 
-// Roboto с поддержкой кириллицы
 const roboto = Roboto({
   subsets: ["latin", "cyrillic"],
   weight: ["400", "700"],
   variable: "--font-roboto",
-});
-
-// Geist_Mono поддерживает только latin
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -28,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body className={`${roboto.variable}`}>{children}</body>
     </html>
   );
 }

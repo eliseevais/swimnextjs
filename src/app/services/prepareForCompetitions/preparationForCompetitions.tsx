@@ -1,5 +1,5 @@
 import Image from "next/image";
-import s from "../childrenSwim.module.css";
+import s from "../childElement.module.css";
 
 export const PreparationForCompetitions = () => {
   return (

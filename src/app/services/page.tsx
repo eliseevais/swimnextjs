@@ -1,8 +1,9 @@
-import { ChildrenSwim } from "@/common/components/works/childrenSwim/childrenSwim";
-import { AdultSwim } from "@/common/components/works/adultSwim/adultSwim";
-import s from "./works.module.css";
-import { PreparationForCompetitions } from "@/common/components/works/preparationForCompetitions/preparationForCompetitions";
-export const Works = () => {
+import { ChildrenSwim } from "@/app/services/childrenSwim/childrenSwim";
+import { AdultSwim } from "@/app/services/adultSwim/adultSwim";
+import { PreparationForCompetitions } from "@/app/services/prepareForCompetitions/preparationForCompetitions";
+import s from "./services.module.css";
+
+export default function MyServices() {
   return (
     <div className={s.worksWrapper}>
       <div>
@@ -17,4 +18,4 @@ export const Works = () => {
       </div>
     </div>
   );
-};
+}

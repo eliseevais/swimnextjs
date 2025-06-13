@@ -1,4 +1,4 @@
-import s from "../testimony.module.css";
+import s from "../description.module.css";
 import Image from "next/image";
 
 export const BabySwimPlus = () => {

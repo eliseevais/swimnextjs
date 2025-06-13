@@ -3,7 +3,7 @@
   min-height: 110px;
   text-align: center;
   font-size: 14px;
-  color: var(--light-700);
+  color: var(--light-500);
   background-color: var(--dark-900);
   display: flex;
   justify-content: center;
@@ -12,6 +12,6 @@
 }
 
 .footerWrapper a {
-  color: var(--primary-700);
+  color: var(--light-500);
   text-decoration: none;
 }

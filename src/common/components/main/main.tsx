@@ -7,8 +7,7 @@ export const Main = () => {
       <div className={s.leftSide}></div>
       <div className={s.rightSide}></div>
       <div className={s.greetings}>
-        <h1>Обучение плаванию</h1>
-        <h1>взрослых и детей</h1>
+        <h1>Обучение плаванию взрослых и детей</h1>
         <span>
           Хочешь чувствовать себя уверенно в воде?
           <br />
@@ -17,13 +16,13 @@ export const Main = () => {
           Или готовишься к соревнованиям?
           <br />
           SwimSchool — это место, где вода становится твоим другом.
-          <br />Я обучаю с нуля, помогаю преодолеть страх и выведу навыки на
-          новый уровень.
         </span>
         <div>
           <button className={s.callme}>
-            <FiPhone className={s.icon} />
-            <span>Связаться</span>
+            <div>
+              <FiPhone className={s.icon} />
+            </div>
+            <div className={s.buttonText}>Связаться</div>
           </button>
         </div>
       </div>

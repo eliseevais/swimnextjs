@@ -1,5 +1,5 @@
 import Image from "next/image";
-import s from "@/common/components/works/childrenSwim.module.css";
+import s from "../childElement.module.css";
 
 export const AdultSwim = () => {
   return (

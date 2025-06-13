@@ -1,12 +1,22 @@
 .testimonyWrapper {
   width: 100%;
   min-height: 660px;
-  background-color: var(--dark-500);
+  background-color: var(--dark-800);
   position: relative;
   padding: 0 120px;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.sloganAndCarusel {
+  max-width: 900px;
+  border: 1px solid red;
+  display: block;
+}
+
+.slogan {
+
 }
 
 .imageAndDescription {
@@ -34,7 +44,7 @@
   bottom: 130px;
   left: 520px;
   z-index: 5; /* 👈 чтобы быть поверх */
-  color: var(--primary-700);
+  color: var(--primary-500);
   display: flex;
   gap: 8px;
 }
@@ -44,7 +54,7 @@
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
-  color: var(--primary-700);
+  color: var(--primary-500);
   background: transparent;
   border: none;
   transition: transform 0.2s ease, color 0.2s ease;
@@ -71,7 +81,7 @@
 }
 
 .number {
-  color: var(--primary-700);
+  color: var(--primary-500);
   font-weight: bold;
   font-size: 50px;
 }

@@ -9,13 +9,13 @@
 html,
 body {
   font-family: var(--font-family), Arial, sans-serif;
-  /*background-color: var(--dark-900);*/
-  background-color: var(--light-100);
+  background-color: var(--dark-700);
   width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
   color: var(--light-100);
   cursor: default;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -29,10 +29,12 @@ a {
 :root {
   --font-family: "Inter", "Roboto", sans-serif;
   --light-100: #FFFFFF;
-  --light-700: #C4C4C4;
-  --primary-700: #676CDB;
-  --dark-500: #2D3540;
-  --dark-700: #222A36;
-  --dark-900: #000000;
+  --light-500: #C0C8D0;
+  --primary-500:#4DA8DA;
+  --primary-600:#5a7de1;
+  --dark-600: #2A3442;
+  --dark-700: #1F2732;
+  --dark-800: #151B24;
+  --dark-900: #0B0F14;
 }
 

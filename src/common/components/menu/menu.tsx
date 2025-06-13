@@ -1,29 +1,32 @@
-import Link from "next/link";
 import s from "../menu/menu.module.css";
 
 export const Menu = () => {
   return (
     <nav className={s.navWrapper}>
-      <div>
-        <ul>
-          <Link href={"Home"} className={s.link}>
+      <ul className={s.linkList}>
+        <li>
+          <a href="#main" className={s.link}>
             Главная
-          </Link>
-          <Link href={"Description"} className={s.link}>
-            Описание
-          </Link>
-          <Link href={"Services"} className={s.link}>
+          </a>
+        </li>
+        <li>
+          <a href="#services" className={s.link}>
             Услуги
-          </Link>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <Link href={"Contacts"} className={s.link}>
+          </a>
+        </li>
+        <li>
+          <a href="#description" className={s.link}>
+            Описание
+          </a>
+        </li>
+      </ul>
+      <ul className={s.contactWrapper}>
+        <li>
+          <a href="#contacts" className={s.linkContacts}>
             Контакты
-          </Link>
-        </ul>
-      </div>
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 };
