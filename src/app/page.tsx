@@ -3,9 +3,9 @@ import { Header } from "@/common/components/header/header";
 import { Main } from "@/common/components/main/main";
 import { TypesOfSwim } from "@/common/components/typesOfSwim/typesOfSwim";
 import MyServices from "@/app/services/page";
-import { Contact } from "@/common/components/contact/contact";
 import { Footer } from "@/common/components/footer/footer";
 import Description from "@/app/description/page";
+import Contacts from "@/app/contacts/page";
 
 export default function App() {
   return (
@@ -24,7 +24,7 @@ export default function App() {
         <Description />
       </section>
       <section id="contacts">
-        <Contact />
+        <Contacts />
       </section>
       <Footer />
     </div>

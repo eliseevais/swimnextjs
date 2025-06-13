@@ -1,4 +1,4 @@
-.testimonyWrapper {
+.descriptionWrapper {
   width: 100%;
   min-height: 660px;
   background-color: var(--dark-800);
@@ -10,47 +10,30 @@
 }
 
 .sloganAndCarusel {
-  max-width: 900px;
-  border: 1px solid red;
+  max-width: 800px;
   display: block;
 }
 
-.slogan {
-
+.description h3 {
+  margin-bottom: 16px;
 }
 
-.imageAndDescription {
-  width: 894px;
-  height: 394px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-}
-
-.image {
-  object-fit: cover;
-  border-radius: 2px;
-}
-
-.description {
-  font-size: 20px;
-  padding: 20px;
+.description p {
+  line-height: 1.5;
 }
 
 .controls {
   position: absolute;
-  bottom: 130px;
+  bottom: 140px;
   left: 520px;
-  z-index: 5; /* 👈 чтобы быть поверх */
+  z-index: 5;
   color: var(--primary-500);
   display: flex;
   gap: 8px;
 }
 
 .controls button {
-  margin: 12px;
+  margin: 16px;
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
@@ -72,16 +55,16 @@
 }
 
 .facts {
-  max-width: 250px;
-  font-size: 30px;
+  max-width: 320px;
+  font-size: 24px;
 }
 
 .fact {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .number {
   color: var(--primary-500);
   font-weight: bold;
-  font-size: 50px;
+  font-size: 48px;
 }

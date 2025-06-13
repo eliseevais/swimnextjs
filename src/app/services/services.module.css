@@ -22,6 +22,12 @@
   font-size: 40px;
 }
 
+.slogan {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .typesOfServices {
   min-width: 900px;
   display: flex;

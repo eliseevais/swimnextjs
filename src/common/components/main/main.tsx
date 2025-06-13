@@ -1,11 +1,28 @@
+"use client";
+
+import { useState } from "react";
 import s from "../main/main.module.css";
 import { FiPhone } from "react-icons/fi";
+import Image from "next/image";
+import ContactPopup from "@/common/components/contactPopup/contactPopup";
 
 export const Main = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <div className={s.mainWrapper}>
       <div className={s.leftSide}></div>
-      <div className={s.rightSide}></div>
+      <div className={s.rightSide}>
+        <Image
+          src="/assets/2from2.jpg"
+          alt="background"
+          fill
+          style={{
+            objectFit: "cover",
+            zIndex: 1,
+          }}
+        />
+      </div>
       <div className={s.greetings}>
         <h1>Обучение плаванию взрослых и детей</h1>
         <span>
@@ -18,14 +35,22 @@ export const Main = () => {
           SwimSchool — это место, где вода становится твоим другом.
         </span>
         <div>
-          <button className={s.callme}>
+          <button
+            className={s.buttonCallme}
+            onClick={() => setIsPopupOpen(true)}
+          >
             <div>
-              <FiPhone className={s.icon} />
+              <FiPhone className={s.buttonIcon} />
             </div>
             <div className={s.buttonText}>Связаться</div>
           </button>
         </div>
       </div>
+
+      <ContactPopup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
     </div>
   );
 };

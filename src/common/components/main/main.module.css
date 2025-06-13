@@ -1,25 +1,19 @@
 .mainWrapper {
-  position: relative;
-  display: flex;
-  flex-direction: row;
   width: 100%;
   height: 744px;
+  display: flex;
+  position: relative;
 }
 
 .leftSide {
-  width: 50%;
-  height: 100%;
+  flex: 1;
   background-color: var(--dark-600);
 }
 
 .rightSide {
+  flex: 1;
   position: relative;
-  width: 50%;
-  height: 100%;
-  background-image: url('/assets/swimmer.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
 }
 
 .greetings {
@@ -27,10 +21,11 @@
   top: 50%;
   left: 120px;
   transform: translateY(-50%);
+  z-index: 9;
 }
 
 .greetings h1 {
-  font-size: 90px;
+  font-size: 88px;
   max-width: 880px;
   margin-bottom: 24px;
 }
@@ -41,39 +36,70 @@
   margin-bottom: 24px;
   font-size: 20px;
   line-height: 1.5;
-  word-wrap: break-word;
-  white-space: normal;
 }
 
-.callme {
+.buttonCallme {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   min-width: 200px;
   min-height: 64px;
-  padding: 0 8px;
   margin-top: 30px;
+  padding: 0 8px;
   background-color: var(--primary-500);
   color: var(--light-100);
   font-size: 18px;
   border-radius: 4px;
-  text-align: center;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.callme:hover {
+.buttonIcon {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.buttonIcon:hover {
   background-color: var(--primary-600);
   transform: translateY(-4px);
-  transition: background-color 0.3s ease;
-}
-
-
-.icon {
-  font-size: 20px;
-  margin-top: 4px;
 }
 
 .buttonText {
   font-size: 20px;
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup {
+  background: white;
+  padding: 24px 32px;
+  border-radius: 8px;
+  max-width: 320px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.popupClose {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+  color: #333;
 }
