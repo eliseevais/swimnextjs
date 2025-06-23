@@ -4,7 +4,6 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import s from "./description.module.css";
 import { SwimDescription } from "@/common/components/swimDescription/swimDescription";
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const factsData = [
   {
@@ -32,7 +31,7 @@ export default function Description() {
 
   const slidesData = [
     {
-      imgSrc: `${basePath}/assets/1from3.jpg`,
+      imgSrc: `/assets/1from3.jpg`,
       altText: "baby swim",
       title: "Плавание с раннего возраста",
       description: (
@@ -46,7 +45,7 @@ export default function Description() {
       ),
     },
     {
-      imgSrc: `${basePath}/assets/2from3.jpg`,
+      imgSrc: `/assets/2from3.jpg`,
       altText: "adult swim",
       title: "Плавание для взрослых",
       description: (
@@ -60,7 +59,7 @@ export default function Description() {
       ),
     },
     {
-      imgSrc: `${basePath}/assets/3from3.jpg`,
+      imgSrc: `/assets/3from3.jpg`,
       altText: "preparation for competitions",
       title: "Совершенствование техники",
       description: (
