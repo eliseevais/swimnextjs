@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "next build && next export && echo школа-плавания.online > out/CNAME && gh-pages -d out"
   },
   "dependencies": {
     "keen-slider": "^6.8.6",
