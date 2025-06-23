@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
+  basePath: "/swimnextjs",
+  assetPrefix: "/swimnextjs/",
   images: {
     unoptimized: true,
   },
-  basePath: "/swimnextjs",
-  assetPrefix: "/swimnextjs",
 };
 
 module.exports = nextConfig;
