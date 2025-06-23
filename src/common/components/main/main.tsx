@@ -6,6 +6,8 @@ import { FiPhone } from "react-icons/fi";
 import Image from "next/image";
 import ContactPopup from "@/common/components/contactPopup/contactPopup";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const Main = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -14,7 +16,7 @@ export const Main = () => {
       <div className={s.leftSide}></div>
       <div className={s.rightSide}>
         <Image
-          src="/assets/2from2.jpg"
+          src={`${basePath}/assets/2from2.jpg`}
           alt="background"
           fill
           style={{

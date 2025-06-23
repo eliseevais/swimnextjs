@@ -1,12 +1,13 @@
 import s from "./contacts.module.css";
 import Image from "next/image";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Contacts() {
   return (
     <div className={s.contactWrapper}>
       <div className={s.leftSide}>
         <Image
-          src="/assets/1from2.jpg"
+          src={`${basePath}/assets/1from2.jpg`}
           alt="Фото тренера"
           fill
           style={{ objectFit: "cover", zIndex: 7 }}

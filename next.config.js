@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: "/swimnextjs",
+  assetPrefix: "/swimnextjs",
 };
 
 module.exports = nextConfig;
