@@ -9,8 +9,40 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "SwimSchool",
-  description: "Created by Eliseeva Irina",
+  title: "SwimSchool — Школа плавания",
+  description:
+    "Обучение плаванию детей и взрослых. Индивидуальный и профессиональный подход.",
+  keywords: [
+    "школа плавания",
+    "плавание",
+    "обучение плаванию",
+    "дети",
+    "взрослые",
+    "SwimSchool",
+  ],
+  openGraph: {
+    title: "SwimSchool — Школа плавания",
+    description:
+      "Погрузиcь в уверенность с нами! Обучение плаванию детей и взрослых.",
+    url: "https://школа-плавания.online",
+    siteName: "SwimSchool",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SwimSchool",
+      },
+    ],
+    locale: "ru_RU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SwimSchool — Школа плавания",
+    description: "Плавание для всех возрастов с профессионалами.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -19,8 +51,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${roboto.variable}`}>{children}</body>
+    <html lang="ru">
+      <head>
+        <title>SwimSchool — Школа плавания</title>
+        <meta
+          name="description"
+          content="Обучение плаванию детей и взрослых в Москве."
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (location.hostname.startsWith('www.')) {
+                location.href = location.href.replace('www.', '');
+              }
+            `,
+          }}
+        />
+      </head>
+      <body className={roboto.variable}>{children}</body>
     </html>
   );
 }
