@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "SwimSchool",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://школа-плавания.online/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "SwimSchool",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SwimSchool — Школа плавания",
     description: "Плавание для всех возрастов с профессионалами.",
-    images: ["/og-image.jpg"],
+    images: ["https://школа-плавания.online/og-image.jpg"],
   },
 };
 
@@ -57,6 +57,10 @@ export default function RootLayout({
         <meta
           name="description"
           content="Обучение плаванию детей и взрослых в Москве."
+        />
+        <meta
+          property="og:image"
+          content="https://школа-плавания.online/og-image.jpg"
         />
         <link rel="icon" href="/favicon.ico" />
         <script
