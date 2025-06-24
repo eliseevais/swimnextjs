@@ -83,7 +83,7 @@
   user-select: text;
 }
 
-@media (min-width: 23rem) and (max-width: 27rem) {
+@media (min-width: 23rem) and (max-width: 58rem) {
   .mainWrapper {
     flex-direction: column-reverse;
   }

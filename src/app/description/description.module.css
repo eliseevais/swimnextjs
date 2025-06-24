@@ -70,7 +70,7 @@
   font-size: 3rem;
 }
 
-@media (min-width: 23rem) and (max-width: 27rem) {
+@media (min-width: 23rem) and (max-width: 58rem) {
   .descriptionWrapper {
     flex-direction: column;
     padding: 2rem 1rem 0 1rem;

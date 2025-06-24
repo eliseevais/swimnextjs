@@ -35,7 +35,7 @@
   }
 }
 
-@media (min-width: 23rem) and (max-width: 27rem) {
+@media (min-width: 23rem) and (max-width: 58rem) {
   .typesOfSwimWrapper {
     min-height: 5rem;
   }

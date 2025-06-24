@@ -16,7 +16,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 23rem) and (max-width: 27rem) {
+@media (min-width: 23rem) and (max-width: 58rem) {
   .footerWrapper {
     font-size: 0.75rem;
     padding: 1rem 0.5rem;

@@ -41,7 +41,7 @@
   color: var(--light-100);
 }
 
-@media (min-width: 23rem) and (max-width: 27rem) {
+@media (min-width: 23rem) and (max-width: 58rem) {
   .worksWrapper {
     min-height: 70rem;
     flex-direction: column;

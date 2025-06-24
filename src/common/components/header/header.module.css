@@ -135,7 +135,7 @@
   animation: fadeInDown 0.5s ease;
 }
 
-@media (min-width: 23rem) and (max-width: 27rem) {
+@media (min-width: 23rem) and (max-width: 58rem) {
   .headerWrapper {
     min-width: 23rem;
     max-width: 27rem;
