@@ -36,10 +36,11 @@ export const Main = () => {
         <span>Я помогу тебе в этом!</span>
         <div>
           <button className={s.buttonCallme} onClick={onTogglePopupHandler}>
-            <div>
-              <FiPhone className={s.buttonIcon} />
+            <div className={s.buttonIcon}>
+              <FiPhone />
             </div>
             <div className={s.buttonText}>Связаться</div>
+            <div className={s.phoneNumber}>+7 (960) 123-45-67</div>
           </button>
         </div>
       </div>

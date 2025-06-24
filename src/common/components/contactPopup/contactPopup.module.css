@@ -39,6 +39,12 @@
   line-height: 1;
 }
 
+@media (min-width: 23rem) and (max-width: 27rem) {
+  .overlay, .popup {
+    display: none;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
