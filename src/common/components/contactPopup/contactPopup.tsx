@@ -24,7 +24,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
           &times;
         </button>
         <h2>Связаться со мной</h2>
-        <p>Телефон: +7-963-123-45-67</p>
+        <p>Телефон: +7 (963) 123 45 67</p>
       </div>
     </div>
   );

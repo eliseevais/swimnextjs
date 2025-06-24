@@ -1,6 +1,6 @@
 .mainWrapper {
   width: 100%;
-  height: 744px;
+  height: 46rem;
   display: flex;
   position: relative;
 }
@@ -19,87 +19,59 @@
 .greetings {
   position: absolute;
   top: 50%;
-  left: 120px;
+  left: 8rem;
   transform: translateY(-50%);
   z-index: 9;
+  display: flex;
+  flex-direction: column;
 }
 
 .greetings h1 {
-  font-size: 88px;
-  max-width: 880px;
-  margin-bottom: 24px;
+  font-size: 5rem;
+  max-width: 50rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(0.25rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  background-color: transparent;
 }
 
 .greetings span {
-  display: inline-block;
-  max-width: 440px;
-  margin-bottom: 24px;
-  font-size: 20px;
-  line-height: 1.5;
+  max-width: 35rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  backdrop-filter: blur(0.125rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  background-color: transparent;
 }
 
 .buttonCallme {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  min-width: 200px;
-  min-height: 64px;
-  margin-top: 30px;
-  padding: 0 8px;
+  gap: 0.5rem;
+  min-width: 12rem;
+  min-height: 4rem;
+  margin-top: 2rem;
+  padding: 0 0.5rem;
   background-color: var(--primary-500);
   color: var(--light-100);
-  font-size: 18px;
-  border-radius: 4px;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.buttonIcon {
-  font-size: 20px;
-  margin-top: 8px;
+.buttonCallme:hover {
+  background-color: var(--primary-600);
+  transform: translateY(-0.25rem);
 }
 
-.buttonIcon:hover {
-  background-color: var(--primary-600);
-  transform: translateY(-4px);
+.buttonIcon {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
 }
 
 .buttonText {
-  font-size: 20px;
-}
-
-.popupOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.popup {
-  background: white;
-  padding: 24px 32px;
-  border-radius: 8px;
-  max-width: 320px;
-  position: relative;
-  box-shadow: 0 0 15px rgba(0,0,0,0.25);
-  text-align: center;
-}
-
-.popupClose {
-  position: absolute;
-  top: 8px;
-  right: 12px;
-  background: transparent;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-  line-height: 1;
-  color: #333;
+  font-size: 1.25rem;
 }

@@ -8,6 +8,9 @@ import ContactPopup from "@/common/components/contactPopup/contactPopup";
 
 export const Main = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const onTogglePopupHandler = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
 
   return (
     <div className={s.mainWrapper}>
@@ -25,20 +28,14 @@ export const Main = () => {
       </div>
       <div className={s.greetings}>
         <h1>Обучение плаванию взрослых и детей</h1>
+        <span>Хочешь чувствовать себя комфортно и уверенно в воде?</span>
         <span>
-          Хочешь чувствовать себя уверенно в воде?
-          <br />
-          Мечтаешь, чтобы твой ребёнок плавал как дельфин?
-          <br />
-          Или готовишься к соревнованиям?
-          <br />
-          SwimSchool — это место, где вода становится твоим другом.
+          Мечтаешь, чтобы твой малыш плавал легко и свободно, как дельфин?
         </span>
+        <span>Готовишься к соревнованиям и хочешь улучшить навыки?</span>
+        <span>Я помогу тебе в этом!</span>
         <div>
-          <button
-            className={s.buttonCallme}
-            onClick={() => setIsPopupOpen(true)}
-          >
+          <button className={s.buttonCallme} onClick={onTogglePopupHandler}>
             <div>
               <FiPhone className={s.buttonIcon} />
             </div>
@@ -47,10 +44,7 @@ export const Main = () => {
         </div>
       </div>
 
-      <ContactPopup
-        isOpen={isPopupOpen}
-        onClose={() => setIsPopupOpen(false)}
-      />
+      <ContactPopup isOpen={isPopupOpen} onClose={onTogglePopupHandler} />
     </div>
   );
 };
