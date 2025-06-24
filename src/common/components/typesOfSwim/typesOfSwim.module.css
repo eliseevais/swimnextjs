@@ -1,6 +1,6 @@
 .typesOfSwimWrapper {
   width: 100%;
-  min-height: 160px;
+  min-height: 10rem;
   background: var(--dark-800);
   overflow: hidden;
   position: relative;
@@ -16,14 +16,14 @@
 
 .marqueeContent {
   display: flex;
-  gap: 80px;
+  gap: 5rem;
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--light-100);
   white-space: nowrap;
-  animation: scrollMarquee 45s linear infinite;
+  animation: scrollMarquee 120s linear infinite;
 }
 
 @keyframes scrollMarquee {
@@ -32,5 +32,14 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 23rem) and (max-width: 27rem) {
+  .typesOfSwimWrapper {
+    min-height: 5rem;
+  }
+  .marqueeContent {
+    font-size: 1.125rem;
   }
 }
