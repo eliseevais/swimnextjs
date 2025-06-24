@@ -1,15 +1,223 @@
 .headerWrapper {
-  width: 1440px;
-  height: 64px;
+  --z-header: 999;
+  --z-menu: 1500;
+
+  max-width: 90rem;
+  width: 100%;
+  height: 4rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 120px;
+  padding: 0 8rem;
   position: fixed;
-  z-index: 10;
+  z-index: var(--z-header);
+  background-color: rgba(34, 42, 54, 0.4);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  animation: fadeInDown 0.5s ease;
+}
 
-  background-color: rgba(34, 42, 54, 0.4); /* полупрозрачный фон */
-  backdrop-filter: blur(10px); /* размытие заднего фона */
-  -webkit-backdrop-filter: blur(10px); /* для Safari */
+.logo {
+  margin: 1rem;
+  animation: fadeInDown 0.5s ease;
+}
+
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 66%;
+  position: relative;
+  animation: fadeInDown 0.5s ease;
+}
+
+.linkList {
+  z-index: var(--z-menu);
+  font-size: 1.25rem;
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  color: var(--light-100);
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  animation: fadeInDown 0.5s ease;
+}
+
+.link:hover {
+  background-color: var(--dark-600);
+}
+
+.linkContacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10rem;
+  width: auto;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--light-100);
+  background-color: var(--primary-500);
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 8rem;
+  animation: fadeInDown 0.5s ease;
+}
+
+.linkContacts:hover {
+  background-color: var(--primary-600);
+  transform: translateY(-0.25rem);
+}
+
+.burger {
+  position: absolute;
+  top: -0.5rem;
+  left: 11rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  cursor: pointer;
+  color: var(--light-100);
+  font-size: 2rem;
+  z-index: 1600;
+  background-color: rgba(34, 42, 54, 0.4);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  animation: fadeInDown 0.5s ease;
+}
+
+.burger.menuOpen {
+  background-color: transparent;
+}
+
+.burger:focus {
+  outline: none;
+}
+
+.burgerLine {
+  width: 1.5rem;
+  height: 0.25rem;
+  background-color: var(--light-100);
+  border-radius: 0.25rem;
+  animation: fadeInDown 0.5s ease;
+}
+
+.closeIcon {
+  position: fixed;
+  top: 1rem;
+  left: 18rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  user-select: none;
+  color: var(--light-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1601;
+  cursor: pointer;
+  animation: fadeInDown 0.5s ease;
+}
+
+@media (min-width: 23rem) and (max-width: 27rem) {
+  .headerWrapper {
+    min-width: 23rem;
+    max-width: 27rem;
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logoForceMobile {
+    display: block;
+    position: absolute;
+    top: -1rem;
+    left: -6rem;
+    z-index: 1601;
+    color: var(--light-100);
+    font-size: 1rem;
+    animation: fadeInDown 0.5s ease;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .linkList {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-900);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 1rem 2.5rem;
+    gap: 1rem;
+    z-index: var(--z-menu);
+    overflow-y: auto;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 0.5s ease;
+  }
+
+  .linkList.open {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .contactWrapper {
+    display: none;
+  }
+
+  .linkContacts {
+    margin-top: 10rem;
+    margin-left: 0;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -11,19 +11,19 @@ export default function App() {
   return (
     <div className={s.page}>
       <Header />
-      <section id="main">
+      <section id="main" className={s.section}>
         <Main />
       </section>
-      <section id="types">
+      <section id="types" className={s.section}>
         <TypesOfSwim />
       </section>
-      <section id="services">
+      <section id="services" className={s.section}>
         <MyServices />
       </section>
-      <section id="description">
+      <section id="description" className={s.section}>
         <Description />
       </section>
-      <section id="contacts">
+      <section id="contacts" className={s.section}>
         <Contacts />
       </section>
       <Footer />

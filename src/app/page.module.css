@@ -1,0 +1,10 @@
+@media (max-width: 375px) {
+  .page {
+    max-width: 375px;
+  }
+
+  .section {
+    max-width: 375px;
+    border: 1px solid red;
+  }
+}
