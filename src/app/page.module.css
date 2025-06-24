@@ -1,11 +1,16 @@
-@media (max-width: 375px) {
+@media (min-width: 23rem) and (max-width: 27rem)  {
   .page {
-    max-width: 375px;
+    min-width: 23rem;
+    max-width: 27rem;
+    margin: 0 auto;
+    overflow-x: hidden;
   }
 
   .section {
-    max-width: 375px;
-    border: 1px solid red;
+    min-width: 23rem;
+    max-width: 27rem;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
 }
 

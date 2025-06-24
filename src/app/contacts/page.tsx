@@ -22,7 +22,7 @@ export default function Contacts() {
           плавания.
         </p>
 
-        <p className={s.text}>Буду рада услышать вас по телефону:</p>
+        <p className={s.text}>Буду рада услышать Вас по телефону:</p>
         <p className={s.phone}>+7 (960) 123-45-67</p>
         <p className={s.text}>
           Или пишите в Telegram или WhatsApp — всегда на связи!
