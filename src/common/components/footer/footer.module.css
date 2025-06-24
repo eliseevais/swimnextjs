@@ -1,5 +1,5 @@
 .footerWrapper {
-  width: 100%;
+  max-width: 100%;
   min-height: 6rem;
   text-align: center;
   font-size: 0.875rem;
@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .footerWrapper a {
@@ -20,6 +21,7 @@
   .footerWrapper {
     font-size: 0.75rem;
     padding: 1rem 0.5rem;
+    margin: 0 1rem;
     text-align: center;
   }
 
