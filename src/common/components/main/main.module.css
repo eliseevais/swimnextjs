@@ -100,7 +100,7 @@
     width: 100%;
     position: absolute;
     top: 75%;
-    left: 1rem;
+    left: 0.5rem;
     transform: translateY(-50%);
     z-index: 9;
     display: flex;
@@ -110,14 +110,14 @@
 
   .greetings h1 {
     width: 100%;
-    max-width: 23rem;
+    max-width: 22rem;
     font-size: 2rem;
     margin-bottom: 1.5rem;
   }
 
   .greetings span {
     width: 100%;
-    max-width: 23rem;
+    max-width: 22rem;
     margin-bottom: 0.75rem;
     font-size: 1.125rem;
     line-height: 1.25rem;
