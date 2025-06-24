@@ -150,9 +150,9 @@
 
   .logoForceMobile {
     display: block;
-    position: absolute;
-    top: -1rem;
-    left: -6rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
     z-index: 1601;
     color: var(--light-100);
     font-size: 1rem;
