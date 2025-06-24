@@ -9,7 +9,7 @@ export const Footer = () => {
         <a href="https://t.me/is_eliseeva" target="_blank">
           @is_eliseeva
         </a>{" "}
-        | ☎️ +7‑926‑061‑30‑04
+        | ☎️ +7 (926) 061‑30‑04
       </div>
     </footer>
   );
