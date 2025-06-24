@@ -28,12 +28,15 @@ export const Main = () => {
       </div>
       <div className={s.greetings}>
         <h1>Обучение плаванию взрослых и детей</h1>
-        <span>Хочешь чувствовать себя комфортно и уверенно в воде?</span>
         <span>
-          Мечтаешь, чтобы твой малыш плавал легко и свободно, как дельфин?
+          Хочешь чувствовать себя комфортно и&nbsp;уверенно в&nbsp;воде?
         </span>
-        <span>Готовишься к соревнованиям и хочешь улучшить навыки?</span>
-        <span>Я помогу тебе в этом!</span>
+        <span>
+          Мечтаешь, чтобы твой малыш плавал легко и&nbsp;свободно,
+          как&nbsp;дельфин?
+        </span>
+        <span>Готовишься к соревнованиям и&nbsp;хочешь улучшить навыки?</span>
+        <span>Я помогу тебе в&nbsp;этом!</span>
         <div>
           <button className={s.buttonCallme} onClick={onTogglePopupHandler}>
             <div className={s.buttonIcon}>

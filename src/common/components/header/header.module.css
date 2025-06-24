@@ -84,7 +84,7 @@
 .burger {
   position: absolute;
   top: -0.5rem;
-  left: 11rem;
+  right: -10rem;
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -121,7 +121,7 @@
 .closeIcon {
   position: fixed;
   top: 1rem;
-  left: 18rem;
+  right: 1rem;
   width: 4rem;
   height: 4rem;
   font-size: 2rem;
